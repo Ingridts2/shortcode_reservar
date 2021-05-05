@@ -1,0 +1,78 @@
+
+/* primeiro bloco */
+.reservawidget {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.reservawidget.small {
+    z-index: 10;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+/* formulario */
+.reservawidget, form {
+    width: 100%;
+    background: #000;
+    padding: 4px 0px;
+    float: left;
+    display: block;
+    border-radius: 0;
+}
+.reservawidget form:last-child {
+    margin-right: 0;
+}
+
+/* Booking Times */
+form, h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+/* select input */
+form select, form input:not([type="submit"]) {
+    height: 34px;
+    margin: 0 0 4px 0;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #fff;
+    font-size: 1.125rem;
+    color: #484848;
+    padding: 10px 0px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-size: 1rem;
+    height: 34px !important;
+ }
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+form select#tipo, form input:not([type="submit"])#tipo {
+    width: 100%;
+}
+.reservawidget form input{
+    width: 100%;
+}
+.reservawidget button{
+    width: 100%;
+}
+button, input, optgroup, select, textarea {   
+    font: inherit; 
+}
+
+/* botao */
+.reservawidget button, .reservawidget a{
+    box-sizing: border-box;
+    font-weight: 600;
+    background: #00ba5a;
+    box-shadow: inset -12rem 0px 3px 0px #00ba5a;
+    color: #fff;
+    border: none;
+    text-align: center;
+    line-height: 1.2;
+}      
