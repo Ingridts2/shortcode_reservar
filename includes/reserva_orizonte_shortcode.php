@@ -14,7 +14,7 @@ function reserva_orizonte_codigo_gerado()
                 <option value="16">​Ribagolfe II</option>
                 <option value="26">​Oeiras Golf</option>
                 </select>
-                <input type="date" name="" id="" required >
+                <input type="date" name="" id="" >
                 <button>
                 <a target="_blank" href=http://localhost/wordpress/teste-shortcode> Reservar </a> 
                 </button>
