@@ -3,6 +3,8 @@
 add_shortcode('reserva_orizonte', 'reserva_orizonte_codigo_gerado');
 function reserva_orizonte_codigo_gerado()
 {
+$atual = data_atual();
+
  return '<div class = "reservawidget small"> 
             <form action novalidate>
 	            <h3>Horários de reserva</h3>
@@ -14,10 +16,17 @@ function reserva_orizonte_codigo_gerado()
                 <option value="16">​Ribagolfe II</option>
                 <option value="26">​Oeiras Golf</option>
                 </select>
-                <input type="date" name="" id="">
-                <button>
-                <a target="_blank" href=http://localhost/wordpress/teste-shortcode> Reservar </a> 
-                </button>
+                <input id="checkreservationdate" type="date" min= "'.$atual .'" value="'.$atual . '" >
+                <input id="checkreservation" type="submit" value="Reservar" class="btn small">   
               </form>
           </div>';
-}
+} 
+
+function data_atual()
+{ 
+   setlocale (LC_ALL, 'pt_BR');
+   $data = date('Y-m-d');
+   return $data;
+} 
+
+?>

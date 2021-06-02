@@ -11,3 +11,5 @@ if(!defined('ABSPATH')){
 }
 require_once plugin_dir_path(__FILE__) . '/includes/reserva_orizonte_shortcode.php';
 require_once plugin_dir_path(__FILE__) . '/includes/reserva_orizonte_scripts.php';
+
+?>
